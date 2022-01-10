@@ -40,13 +40,12 @@ const emailIds = [ "albert.eisntein@gmail.com", "leonardo_da_vinci@hotmail.com",
 // 2 Chiedere all'utente la sua mail di accesso
 const clientMail = prompt('Inserisci la tua email','albert.eisntein@gmail.com' );
 // 3 Dichiarare la variabile message
-let message = '';
+let message = 'no';
 for(let i = 0; i < emailIds.length; i++){
     const currentEmail = emailIds[i];
-    if(currentEmail === clientMail){
+    if(currentEmail === clientMail) {
         message = 'ok';
-        }else{
-        message = 'no';
+    break;
     }
 }
 console.log(message);
