@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 700px;
+    background-color: #7CCC5A;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+}
+#dice-photo{
+    width: 25%;
+}
+#title{
+    margin-left: 15px;
+    color: White;
+}
+/* Current Game */
+section{
+    text-align: center;
+}
+/* Tasto per riavviare la partita */
+#btn-new-game{ 
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: white;
+    background-color: #428BCA;
+    border-radius: 10px;
+}
+#new-game h3{
+    margin-top: 30px;
+}
+#new-game h3:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+/* Color */
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.white{
+    color: white;
+}

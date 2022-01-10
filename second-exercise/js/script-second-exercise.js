@@ -41,13 +41,13 @@ console.log(`Il tuo numero è: ${clientNumber}`); //> 1, 2, 3, 4, 5, 6.
 console.log(`Il numero del pc è: ${pcNumber}`); //> 1, 2, 3, 4, 5, 6.
 //  * Ciclo if per decidere il vincitore
 if(clientNumber > pcNumber){
-        message = 'Hai vinto!';
+        message = `<span class="blue">Hai vinto!</span>`;
     }else if(clientNumber < pcNumber){
-        message = 'Hai perso!';
+        message = `<span class="red">Hai perso!</span>`;
     }else if (clientNumber === pcNumber){
-        message = 'Hai pareggiato';
+        message = `<span class="white">Hai pareggiato!</span>`;
 }
 // Stampa in console   
 console.log(message);
 // Stampa in pagina
-resultElement.innerText = message;
+resultElement.innerHTML = message;
