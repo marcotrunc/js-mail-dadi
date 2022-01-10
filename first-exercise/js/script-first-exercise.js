@@ -16,8 +16,9 @@ const emailIds = [ "albert.eisntein@gmail.com", "leonardo_da_vinci@hotmail.com",
                     "charles.babbage@hotmail.com" ];
 // 2 Chiedere all'utente la sua mail di accesso
 const clientMail = prompt('Inserisci la tua email','albert.eisntein@gmail.com' );
-// 3 Dichiarare la variabile message
+// 3 Dichiarare la variabile message e result
 let message = '';
+const result = document.getElementById('result');
 // 4 If per vedere se la mail è presente oppure no
 if(emailIds.includes(clientMail)){
     message = 'ok, la tua email è stata trovata!';
@@ -26,6 +27,8 @@ if(emailIds.includes(clientMail)){
 };
 // 5 Stampare in console
 console.log(message);
+// 6 Stampare in pagina
+result.innerText = message;
 
 // * Secondo metodo 
 // // 1 Creare un array di email
