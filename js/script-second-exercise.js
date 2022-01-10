@@ -26,18 +26,28 @@ if(userNumber > computerNumber){
 console.log(message);
 
 // * Secondo metodo
+// Richiamo elemento in pagina
+const numberOfClient = document.getElementById('numberofclient');
+const numberOfPc = document.getElementById('numberofpc');
+const resultElement = document.getElementById('result');
 // Randomizzazione delle giocate
 const clientNumber = Math.floor(Math.random() * 6 + 1);
 const pcNumber = Math.floor(Math.random() * 6 + 1);
+// Modifico testo HTML
+numberOfClient.innerText = `Il tuo numero è: ${clientNumber}`;
+numberOfPc.innerText = `Il numero del pc è: ${pcNumber}`;
 // * Stampa in console i numeri casuali
 console.log(`Il tuo numero è: ${clientNumber}`); //> 1, 2, 3, 4, 5, 6.
 console.log(`Il numero del pc è: ${pcNumber}`); //> 1, 2, 3, 4, 5, 6.
 //  * Ciclo if per decidere il vincitore
 if(clientNumber > pcNumber){
-    message = 'Hai vinto!';
+        message = 'Hai vinto!';
     }else if(clientNumber < pcNumber){
         message = 'Hai perso!';
     }else if (clientNumber === pcNumber){
         message = 'Hai pareggiato';
-}   
+}
+// Stampa in console   
 console.log(message);
+// Stampa in pagina
+resultElement.innerText = message;
